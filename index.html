@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finanse</title>
+<html>
+<head>
+  <title>My App</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Hello World</h1>
 
+<h1>Dashboard</h1>
 
-</body></html>
+<div class="menu">
+  <button onclick="goToTodos()">Go to Todos</button>
+  <button onclick="goToFinance()">Go to Finance</button>
+</div>
+
+<script>
+function goToTodos() {
+  window.location.href = "views/todo.html";
+}
+
+function goToFinance() {
+  window.location.href = "views/finance.html";
+}
+</script>
+
+</body>
+</html>
